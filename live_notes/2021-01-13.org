@@ -1,0 +1,43 @@
+* CSE 545: Software Security
+** Connor Nelson, PhD student @ ASU
+** mcsonline@asu.edu
+* Find live event artifacts: https://github.com/ConnorNelson/CSE-545-S21
+* Software Security
+** Software - Make things do what they're supposed to
+** Security - Make things not do what they're not supposed to do
+* Topics Covered
+** Network Security
+** Binary Security
+** Web Security
+* PCTF
+** PCTF framework based on: https://github.com/shellphish/ictf-framework
+** Project Capture The Flag
+** Capture The Flag: Security Game
+*** Jeopardy style Capture The Flag
+**** Bandit
+**** Binary Hacking Assignment
+**** Web Hacking Assignment
+*** Attack Defense style Capture The Flag
+**** You are given some system connected to the game network
+***** Your system runs some number of vulnerable services
+***** The service exposes some port to the network
+**** There are several ticks (rounds), each tick is ~3 minutes
+***** Every tick, gamebot will connect to each team's system, for each service, and it will interact with the service
+****** In doing so it will exercise functionality of the service
+****** It will also create a flag
+**** Attack -> Capture another team's flag for some service
+**** Defence -> Prevent other team's from capturing your flags
+***** Patch your service, then they can't steal the flag
+***** The game will verify the service still performs "required" functionality
+****** Unfortunately you don't necessarily know what's required, but it should be mostly intuitive
+****** You will lose availability points if it doesn't, probably revert the patch in this case
+**** Example Service
+***** Send it your username/password, and it shows your mail
+****** Flag Identifier
+******* You know opponent's flag identifier for each tick, for each service
+******* Username
+****** Flag
+******* Password, sensitive mail, or something a random person probably shouldn't be able to access (unless exploited)
+*** Useful Things
+**** You may have your exploits, but you need to run them every single tick
+***** You want an exploit thrower
