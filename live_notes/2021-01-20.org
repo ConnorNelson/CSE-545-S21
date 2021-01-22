@@ -5,10 +5,7 @@
   + Binary Hacking: ideally this weekend, guarantee 2 weeks before due
 * GDB is cool
   + Some commands
-    + `set disassembly-flavor intel`
-    + `start`, `p/x`, `x/x`, `x/gx`, `x/s`, `x/8i`, `b`, `c`, `set`, `finish`
+    + ~set disassembly-flavor intel~
+    + ~start~, ~p/x~, ~x/x~, ~x/gx~, ~x/s~, ~x/8i~, ~b~, ~c~, ~set~, ~finish~
   + Make GDB even cooler: https://github.com/pwndbg/pwndbg
-  + GDB scripting
-    ```sh
-    gdb -x re_check_passwd_script.gdb re_check_passwd
-    ```
+  + GDB scripting: ~gdb -x re_check_passwd_script.gdb re_check_passwd~
